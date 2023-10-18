@@ -399,6 +399,10 @@ img {
     fill: var(--CLOUD);
 }
 
+.icon-subscribe {
+    margin-left: 16px;
+}
+
 .social-media {
     font-size: 16px;
     font-weight: 500;
@@ -543,10 +547,6 @@ transform: translateY(0%);
     display: flex;
 }
 
-.form-subscribe-label {
-    gap: 24px;
-}
-
 .form-subscribe-input {
     width: 264px;
     height: 40px;
@@ -559,6 +559,7 @@ transform: translateY(0%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--WHITE);
+    gap: 24px;
 }
 
 placeholder {
@@ -703,7 +704,7 @@ placeholder {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus-within input {
+.modal-input:focus-within {
     border-color: var(--IRIS);
 }
 
@@ -715,7 +716,8 @@ placeholder {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus-within svg {
+.modal-icon:hover,
+.modal-icon:focus {
     fill: var(--IRIS);
 }
 
@@ -751,7 +753,8 @@ placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--LIGHTSLATE)
+    color: var(--LIGHTSLATE);
+    display: block;
 }
 
 .span-user-privacy {
@@ -764,6 +767,12 @@ placeholder {
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+
+.checkbox:checked span {
+    background-color: var(--OCEAN);
+    border: none;
+    fill: var(--CLOUD);
 }
 
 .modal-check {
