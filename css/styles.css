@@ -365,7 +365,7 @@ img {
 }
 
 .container-footmedia {
-    margin: 0;
+    margin-right: 120px;
 }
 
 .list-footmedia {
@@ -539,6 +539,34 @@ transform: translateY(0%);
     margin-bottom: 16px;
 }
 
+.button-subscribe {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--IRIS);
+    color: var(--WHITE);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    display: block;
+    min-width: 165px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color: var(--OCEAN);
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -566,6 +594,7 @@ transform: translateY(0%);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px;
 }
 
 .modal-button {
@@ -599,4 +628,35 @@ transform: translateY(0%);
 .modal-button:hover .modal-cross,
 .modal-button:focus .modal-cross {
     fill: var(--WHITE);
+}
+
+.form {
+    
+}
+
+.form-group {
+    
+}
+
+.group-title {
+    color: var(--NAVY-BLUE);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04rem; 
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.form:focus-within {
+    border-color: var(--IRIS);
+}
+  
+.form-label:focus-within {
+    color: var(--IRIS);
 }
