@@ -546,6 +546,7 @@ transform: translateY(0%);
 
 .form-subscribe {
     display: flex;
+    gap: 24px;
 }
 
 .form-subscribe-input {
@@ -560,10 +561,9 @@ transform: translateY(0%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--WHITE);
-    gap: 24px;
 }
 
-placeholder {
+[placeholder] {
     color: var(--WHITE);
 }
 
@@ -593,7 +593,6 @@ placeholder {
     background-color: var(--IRIS);
     border: none;
     border-radius: 4px;
-    margin-left: 24px;
 }
 
 .button-subscribe:hover,
@@ -609,7 +608,6 @@ placeholder {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px;
 }
 
 .is-hidden {
@@ -763,24 +761,22 @@ placeholder {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 8px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    padding: 0;
-    float: left;
-    margin-right: 10px;
 }
 
-input[type=checkbox]:checked + .modal-icon {
+#user-privacy:checked ~ .privacy-policy .span-user-privacy {
     background-color: var(--OCEAN);
     border: none;
 }
-/*
-.span-user-privacy:checked + label svg path {
+
+#user-privacy:checked ~ .privacy-policy .span-user-privacy svg {
     fill: var(--CLOUD);
 }
-*/
+
 .privacy-policy-link {
     color: var(--IRIS);
     text-decoration: underline;
