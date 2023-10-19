@@ -366,17 +366,14 @@
             <div class="modal-comment">
                 <label class="form-label" for="user-comment">
                 Comment</label>
-                    <textarea name="feedback" rows="5" placeholder="Text input" id="user-comment" class="textarea"></textarea>
+                    <textarea name="user-comment" rows="5" placeholder="Text input" id="user-comment" class="textarea"></textarea>
             </div>
             <div class="modal-choice">
-                <input type="checkbox" name="user-privacy" value="true" id="user-privacy" class="visually-hidden checkbox"/>
-                <label class="privacy-policy" for="user-privacy">
-                    I accept the terms and conditions of the<span class="span-user-privacy">
-                        <svg width="10" height="8" class="modal-check">
-                        <use href="./images/icons.svg#icon-check"></use>
-                    </svg></span>
-                    <a class="privacy-policy-link">Privacy Policy</a>
-                </label>
+                <input type="checkbox" class="visually-hidden checkbox" name="user-privacy" value="true" id="user-privacy" />
+                <label class="privacy-policy" for="user-privacy">I accept the terms and conditions of the<span class="span-user-privacy">
+                    <svg width="10" height="8" class="modal-check">
+                    <use href="./images/icons.svg#icon-checkmark"></use></svg></span>
+                    <a href="./" class="privacy-policy-link">Privacy Policy</a></label>
             </div>
             <button type="submit" class="button-modal" data-modal-open>Send</button>
          </form>
