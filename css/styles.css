@@ -401,6 +401,7 @@ img {
 
 .icon-subscribe {
     margin-left: 16px;
+    fill: var(--CLOUD);
 }
 
 .social-media {
@@ -771,7 +772,7 @@ placeholder {
     margin-right: 10px;
 }
 
-input[type=checkbox]:checked + span {
+input[type=checkbox]:checked + .modal-icon {
     background-color: var(--OCEAN);
     border: none;
 }
